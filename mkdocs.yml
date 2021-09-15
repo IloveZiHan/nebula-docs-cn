@@ -20,14 +20,14 @@ theme:
   favicon: 'assets/images/favicon.ico'
   palette:
     - scheme: default
-      primary: cyan
-      accent: cyan
+      primary: teal
+      accent: green
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
       primary: deep orange
-      accent: deep orange
+      accent: red
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
