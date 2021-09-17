@@ -249,6 +249,8 @@ $ npm run start
    $ cd nebula-http-gateway
    $ nohup ./nebula-httpd &
    ```
+   > 默认端口号为:8080。可以通过app.conf中的httpport修改端口号。
+
 
 3. 部署 nebula-graph-studio 并启动。
    
@@ -256,6 +258,9 @@ $ npm run start
    $ cd nebula-graph-studio
    $ npm run start
    ```
+   
+   > 如果httpport的端口不是8080，可以修改./nebula-graph-studio/app/middleware/proxy.js中的地址。否则，连接graphd会出现：405 method not allow 错误。
+
 
 4.启动成功后，在浏览器地址栏输入 `http://ip address:7001`。
    
